@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="CSS/login.css" />
-  </head>
-  <body>
-    <br />
-    <div class="c2">
-      <br />
-      <h1>Login</h1>
-      <div class="input1">
-        <input id="id4" type="text" placeholder="Username" onfocus="movePlaceholderUp(this)" />
-        <br />
-        <input id="id5" type="password" placeholder="Password" onfocus="movePlaceholderUp(this)" />
-        <br />
-        <a href="./index.html"><button id="id6">Login</button></a>
-      </div>
-      <br />
-      <p>Don't have an account? <a href="./signUp.html" target="_blank">Sign Up</a> here</p>
-    </div>
-    <script>
-    function movePlaceholderUp(input) {
-  const placeholder = input.getAttribute('placeholder');
-  if (placeholder) {
-    input.setAttribute('placeholder', '');
-    input.parentNode.classList.add('input-focused');
-  }
-}
 
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="CSS/login.css" />
+  <link rel="stylesheet" href="CSS/home.css" />
+</head>
+
+<body>
+  <div class="c1">
+    <div class="home">
+      <a id="id1" href="./index.html" style="color: white;">HOME</a>
+      <a id="id2" href="./about.html" style="color: white;">ABOUT</a>
+      <input type="text" placeholder="Search By Author,Publisher...." style="border-style: initial;" />
+      <a id="id3" href="./login.html" style="color: white;">LOGIN</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Login</h1>
+    <form>
+      <div class="form-group">
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" onclick="loginFun()">Login</button>
+    </form>
+    <div class="signup-link">
+      <p>Don't have an account? <a href="./signUp.html">Sign Up</a> here</p>
+    </div>
+  </div>
+  <script>
+    function loginFun() {
+      window.location.href = "./index.html"; 
+    }
+    document.getElementById("loginButton").addEventListener("click", loginFun);
+
+  </script>
+</body>
+
 </html>
