@@ -1,8 +1,38 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
-.imageBox img{
-  max-height: 600px !important;
-  max-width: 650px !important;
+
+.imageBox img {
+  height: 350px;
+  width: 480px;
+  background-color: aquamarine;
+  margin-top: 15px;
+  margin-left: 161px;
 }
+.booksInfo{
+  position: absolute;
+  height: 350px;
+  width: 480px;
+  margin-top: -354px;
+  margin-left: 785px;
+  font-size: 33px;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 139px;
+  margin-left: 182px;
+  margin-top: 15px;
+}
+
+.ProductDetails{
+  margin-top: 15px;
+  font-size: 27px;
+  margin-left: 170px;
+  width: 80%;
+}
+
+/*  */
